@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttons"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Update" />
+
+
+        <EditText
+            android:id="@+id/update_confirmpsw_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/update_btn"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/input_design"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/colorLogo"
+            android:textColor="@color/colorLogo"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/updatepsw_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/update_confirmpsw_et"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/input_design"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:hint="Password"
+            android:textColorHint="@color/colorLogo"
+            android:textColor="@color/colorLogo"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/updatedob_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/updatepsw_et"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/input_design"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:hint="Birthday"
+            android:textColorHint="@color/colorLogo"
+            android:inputType="date"
+            android:textColor="@color/colorLogo"/>
+
+        <EditText
+            android:id="@+id/updatephone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/updatedob_et"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_design"
+            android:hint="Phone Number"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textColorHint="@color/colorLogo"
+            android:textSize="18sp"
+            android:inputType="phone"
+            android:textColor="@color/colorLogo"/>
+
+        <EditText
+            android:id="@+id/updateemail_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/updatephone_et"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_design"
+            android:hint="Email"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textColorHint="@color/colorLogo"
+            android:textSize="18sp"
+            android:textColor="@color/colorLogo"/>
+
+
+        <EditText
+            android:id="@+id/updatefName_et"
+            android:layout_height="wrap_content"
+            android:layout_width="175dp"
+            android:layout_above="@id/updateemail_et"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/input_design"
+            android:hint="First Name"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textColorHint="@color/colorLogo"
+            android:textSize="18sp"
+            android:textColor="@color/colorLogo"
+            ></EditText>
+        <EditText
+            android:id="@+id/updatelName_et"
+            android:layout_height="wrap_content"
+            android:layout_width="175dp"
+            android:layout_above="@id/updateemail_et"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/input_design"
+            android:hint="Last Name"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textColorHint="@color/colorLogo"
+            android:textSize="18sp"
+            android:textColor="@color/colorLogo"></EditText>
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_above="@id/updatelName_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/user1" />
+
+    </RelativeLayout>
+
+</FrameLayout>

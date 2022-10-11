@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CheckoutActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <Button
+        android:id="@+id/checkout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/buttons"
+        android:padding="12dp"
+        android:text="Checkout"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/checkoutTotal_tv"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkout_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:text="Total : "
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TotalAmount_tv"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkout_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/checkoutTotal_tv"
+        android:layout_toRightOf="@+id/checkoutTotal_tv"
+        android:padding="5dp"
+        android:text="total amount"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textSize="22sp"
+        android:textStyle="bold"></TextView>
+
+
+
+    <TextView
+        android:id="@+id/checkoutItems_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/TotalAmount_tv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="0dp"
+        android:padding="5dp"
+        android:text="Items : "
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/checkoutSecCode_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkoutItems_tv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/input_design"
+        android:hint="Security Code"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textColorHint="@color/colorLogo"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/checkoutExpdate_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkoutSecCode_et"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_design"
+        android:hint="Expiry Date"
+        android:inputType="date"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textColorHint="@color/colorLogo"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/checkoutcard_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkoutExpdate_et"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/input_design"
+        android:hint="Card Number"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textColorHint="@color/colorLogo"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/checkoutPhone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkoutcard_et"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/input_design"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textColorHint="@color/colorLogo"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/checkoutAddress_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkoutPhone_et"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/input_design"
+        android:hint="Address"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textColorHint="@color/colorLogo"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/checkoutFname_et"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkoutAddress_et"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/input_design"
+        android:hint="First Name"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textColorHint="@color/colorLogo"
+        android:textSize="18sp"></EditText>
+
+    <EditText
+        android:id="@+id/checkoutLname_et"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkoutAddress_et"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/input_design"
+        android:hint="Last Name"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLogo"
+        android:textColorHint="@color/colorLogo"
+        android:textSize="18sp"></EditText>
+
+
+</RelativeLayout>
